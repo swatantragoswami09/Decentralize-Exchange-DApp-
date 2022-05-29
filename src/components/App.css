@@ -1,0 +1,25 @@
+/* Styles go here */
+.loading {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 70px;
+}
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 7px solid gray;
+  border-top-color: lightgray;
+  animation: spin 1s linear infinite;
+  border-radius: 80%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.mymargin {
+  margin-top: 8%;
+}
